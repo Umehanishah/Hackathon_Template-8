@@ -6,7 +6,7 @@ import {
   } from "@/components/ui/hover-card"
 
 
-export default function Navigation() {
+export default function Categories() {
     return ( 
         <section>
             <div className="w[1920] h[full]">

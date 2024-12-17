@@ -5,7 +5,7 @@ import Footer from "../components/footer";
 import Image from "next/image";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
-
+import Link from "next/link";
 
 
 type Product = {
@@ -20,7 +20,8 @@ type Product = {
 export default function Cart() {
   const [products, setProducts] = useState([
     { id: 1, name: "Library Stool Chair", price: 99, quantity: 1 },
-    { id: 2, name: "Library Stool Chair", price: 99, quantity: 1 },
+    { id: 2, name: "Wooden Chair", price: 80, quantity: 1 },
+    { id: 3, name: "Dining Chair", price: 50, quantity: 1 },
   ]);
 
   const increaseQuantity = (id: number) => {
@@ -82,6 +83,17 @@ export default function Cart() {
                     <p className="text-gray-500">Ashen Slate/Cobalt Bliss</p>
                     <p className="text-sm">Size: L</p>
                     <p>Quantity: {product.quantity}</p>
+                    <button className="px-3"
+                  onClick={() => increaseQuantity(product.id)}
+                >
+                  +
+                </button>
+                {product.quantity}
+                <button className="px-3"
+                  onClick={() => decreaseQuantity(product.id)}
+                >
+                  -
+                </button>
                   </div>
                 </div>
                 <div className="flex items-center gap-4">
@@ -116,7 +128,7 @@ export default function Cart() {
             </div>
             <hr/>
             <Button className="w-full mt-5 bg-teal-500 hover:bg-teal-600 text-white py-3 rounded-lg font-medium">
-              Member Checkout
+              <Link href="/checkout">Member Checkout</Link>
             </Button>
           </div>
         </div>

@@ -3,7 +3,7 @@ import Footer from "../components/footer";
 import Product from "../components/product";
 
 
-export default function page(){
+export default function Shop(){
     return(
       <div>
         <Navigation/>

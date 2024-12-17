@@ -76,7 +76,7 @@ export default function Contact() {
       </section>
 
       {/* Features Section */}
-      <section className="mx-10 md:mx-20 lg:mx-48">
+      <section className="mx-10 md:mx-20 lg:mx-48 pb-10">
   <div className="container grid grid-cols-1 sm:grid-cols-3 gap-6 bg-gray-100 py-10 text-center">
     {/* High Quality */}
     <div className="flex flex-col items-center">
@@ -100,6 +100,8 @@ export default function Contact() {
     </div>
   </div>
 </section>
+
+<hr/>
 
       <Footer />
     </main>

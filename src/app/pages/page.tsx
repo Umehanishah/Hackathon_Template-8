@@ -8,6 +8,8 @@ export default function Page(){
       <div>
         <Navigation/>
         <Product/>
+
+        
         <Product/>
         <Product/>
       <Footer/>

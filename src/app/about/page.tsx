@@ -56,7 +56,7 @@ export default function Contact() {
 
 
             <section>
-                <div className="mx-10 md:mx-48">
+                <div className="mx-10 md:mx-48 pb-10">
                     <div>
                         <h2 className="text-xl font-bold pt-20">Our Popular Products</h2>
 
@@ -85,6 +85,8 @@ export default function Contact() {
                     </div>
                 </div>
             </section>
+
+            <hr/>
       <Footer />
     </main>
   );
